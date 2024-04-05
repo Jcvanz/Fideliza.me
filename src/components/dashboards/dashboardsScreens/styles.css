@@ -1,0 +1,208 @@
+/* Overview */
+.overview-content {
+    width: 100%;
+    height: 85%;
+}
+
+.overview-container {
+    width: 100%;
+    display: flex;
+    height: 80%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Cards Data */
+.cards-content {
+    width: 100%;
+    height: 22%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px
+}
+
+.cardsData-content {
+    width: 270px;
+    height: 105px;
+    border-radius: 10px;
+    border: 1px solid #999999;
+    background-color: #e7e6e6;
+    filter: drop-shadow(0px 0px 2px #00000046);
+}
+
+.cards {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px;
+}
+
+.title-content {
+    display: flex;
+    width: 100%;
+    height: 25px;
+    justify-content: space-between;
+}
+
+.text-informations-content{
+    display: flex;
+    height: 30px;
+    flex-direction: column;
+}
+
+.text-balance {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text-title {
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.text-information {
+    font-size: 11px;
+    font-weight: 600;
+    color: #696969;
+    letter-spacing: 0.5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Recent sales */
+.sales-content {
+    width: 35%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid #999999;
+    background-color: #e7e6e6;
+    filter: drop-shadow(0px 0px 2px #00000046);
+}
+
+.sales-title-content {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.sales-title {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sales-subtitle {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #696969;
+}
+
+.person-content {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person-inf-content {
+    display: flex;
+    width: 70%;
+    height: 50px;
+    align-items: center;    
+    gap: 15px;
+}
+
+.person-information {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.person-name {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.person-email {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #696969;
+}
+
+.person-sale-content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 20%;
+}
+
+.person-sale {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.divider {
+    height: 15px;
+}
+
+@media (max-width: 1025px) {
+    .sales-content {
+        height: 90%;
+        overflow-y: scroll;   
+    }
+
+    .cardsData-content {
+        height: 100%;
+    }
+}
+
+@media (max-width: 1010px) {
+    .sales-content {
+        height: 90%;
+        overflow-y: scroll;   
+    }
+
+    .cardsData-content {
+        height: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .cards-content {
+        width: 100%;
+        height: 80vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .overview-container {
+        width: 100%;
+        height: 75vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .sales-content {
+        width: 100%;
+        height: 70vh;
+    }
+}
