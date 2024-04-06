@@ -10,6 +10,7 @@ import { CgProfile } from "react-icons/cg";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 import { MdOutlineSettings } from "react-icons/md";
 import { AiOutlineTeam } from "react-icons/ai";
+import { TbLogout } from "react-icons/tb";
 
 function DropdownMenuComponent() {
 
@@ -38,6 +39,11 @@ function DropdownMenuComponent() {
                     <div className="flex items-center pl-2 hover:bg-[#cecece50] hover:rounded-[5px]">
                         <AiOutlineTeam size={15}/>
                         <DropdownMenuItem className="font-medium cursor-pointer">New Team</DropdownMenuItem>
+                    </div>
+                    <DropdownMenuSeparator />
+                    <div className="flex items-center pl-2 hover:bg-[#cecece50] hover:rounded-[5px]">
+                        <TbLogout size={15}/>
+                        <DropdownMenuItem className="font-medium cursor-pointer">Log out</DropdownMenuItem>
                     </div>
                 </DropdownMenuContent>
             </DropdownMenu>
