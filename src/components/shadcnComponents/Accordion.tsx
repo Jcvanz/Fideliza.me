@@ -70,9 +70,9 @@ function AccordionComponent () {
                         onFocus={() => handleFocus(3)} 
                         className={`hover:no-underline ${onFocus === 3 ? 'bg-[#000000] text-[#fff] hover:text-[#ffffffdd] drop-shadow-[1px_2px_2px_rgba(0,0,0,0.25)]' : 'bg-[#a7a4a411] text-[#000000] hover:text-[#181818b5] hover:bg-[#70707014]'} rounded-[6px] h-[40px] justify-between px-2`}
                     >
-                        <div className='flex justify-start items-center gap-[10px]'>
+                        <div className='flex justify-start items-center gap-[10px] max-[1025px]:w-[120px] max-[900px]:w-[200px] whitespace-nowrap text-ellipsis overflow-hidden '>
                             <RiUserSettingsLine size={17}/>
-                            <span className='whitespace-nowrap text-ellipsis overflow-hidden w-[110px]'>Administrativo</span>
+                            <span className='w-[110px]'>Administrativo</span>
                         </div> 
                     </AccordionTrigger>
                     <AccordionContent className='w-[100%] h-[30px] py-6 flex justify-center items-center'>

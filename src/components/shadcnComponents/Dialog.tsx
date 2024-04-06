@@ -21,7 +21,7 @@ export function DialogDemo({ btnClassName }: DialogDemoProps) {
         <Dialog>
             <DialogTrigger asChild>
                 <div className='flex itens-center justify-center py-3'>
-                    <Button className={`drop-shadow-[2px_2px_2px_rgba(0,0,0,0.25)] ${btnClassName}`}>
+                    <Button className={`drop-shadow-[2px_2px_2px_rgba(0,0,0,0.25)] max-[550px]:w-[90%] ${btnClassName}`}>
                         <MdAdd size={15}/>
                         <text className='w-[80%] text-start pl-2'>
                             Cadastrar conta

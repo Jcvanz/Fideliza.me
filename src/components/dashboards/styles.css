@@ -39,7 +39,19 @@
     height: 100%;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 1025px) {
+    .dashboard-container {
+        height: 100%;
+    }
+}
+
+@media (max-width: 1010px) {
+    .dashboard-container {
+        height: 70%;
+    }
+}
+
+@media (max-width: 800px) {
     .menu-container {
         height: auto;
         padding: 10px 0;
@@ -60,6 +72,6 @@
     }
 
     .dashboard-container  {
-        height: 90%;
+        height: 95%;
     }
 }

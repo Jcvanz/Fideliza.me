@@ -65,7 +65,7 @@
     .menuBottom-container {
         display: flex;
         width: 100%;
-        height: 50vh;
+        height: 30vh;
         align-items: center;
         justify-content: center;
     }
@@ -79,10 +79,28 @@
     }
 
     .btnBt-content {
-        flex-direction: column;
+        display: flex;
+        align-items: start;
         border: none;
-        height: 80%;
+        height: 100%;
         padding: 20px 0;
         overflow-y: scroll;
+    }
+}
+
+@media (max-width: 800px) { 
+    .menuBottom-container {
+        display: flex;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .btnBt-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
     }
 }

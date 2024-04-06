@@ -12,9 +12,10 @@ import { DialogDemo } from './Dialog';
 
 interface SelectAccountProps {
     btnClassName: string;
+    selectTriggerStyle: string;
 }
 
-function SelectAccount({ btnClassName }: SelectAccountProps) {
+function SelectAccount({ btnClassName, selectTriggerStyle }: SelectAccountProps) {
     
     const [accountSelected, setAccountSelected] = useState('*Nome logado*');
     const [data, setData] = useState([
@@ -31,7 +32,7 @@ function SelectAccount({ btnClassName }: SelectAccountProps) {
     return (
         <>
             <Select>
-                <SelectTrigger className="w-[90%] hover:bg-[#f7f7f7] drop-shadow-[1px_2px_2px_rgba(0,0,0,0.25)] max-[550px]:w-[100%]">
+                <SelectTrigger className={`w-[90%] hover:bg-[#f7f7f7] drop-shadow-[1px_2px_2px_rgba(0,0,0,0.25)] ${selectTriggerStyle}`}>
                     <div className='flex gap-[10px] font-semibold whitespace-nowrap text-ellipsis overflow-hidden'>
                         <IoTriangle size={15}/>
                         <SelectValue placeholder={accountSelected}/>

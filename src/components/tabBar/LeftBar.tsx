@@ -8,7 +8,7 @@ function LeftBar() {
         <>
             <div className="menuLeft-container">
                 <div className='btn-content'>
-                    <SelectAccount btnClassName='w-[160px] justify-start'/>
+                    <SelectAccount btnClassName='w-[160px] justify-start' selectTriggerStyle='max-[550px]:w-[90%]'/>
                 </div>
                 <div className='side-menu'>
                     <AccordionComponent/>

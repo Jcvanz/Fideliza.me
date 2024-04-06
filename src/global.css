@@ -104,6 +104,13 @@ body {
 @media (max-width: 900px) {
   .dashboard-content {
     display: block;
-    height: 180vh;
+    height: 100vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .dashboard-content {
+    display: block;
+    height: 230vh;
   }
 }
