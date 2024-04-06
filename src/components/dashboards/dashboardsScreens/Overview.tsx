@@ -6,6 +6,7 @@ import { LiaCreditCard } from "react-icons/lia";
 import { BiGroup } from "react-icons/bi";
 import { SlGraph } from "react-icons/sl";
 import RecentSales from './RecenteSales';
+import GraphicOverview from './GraphicOverview';
 
 function Overview() {
     //Array simulando os dados dos cards
@@ -155,7 +156,7 @@ function Overview() {
                     />
                 </div>
                 <div className='overview-container'>
-                    
+                    <GraphicOverview/>
                     <RecentSales sales={salesData}/>
                 </div>
             </div>

@@ -37,7 +37,7 @@ function RecentSales({ sales }: Props) {
                             </div>
                         </div>
                         <div className='person-sale-content'>
-                            <text className='person-sale'>+{sale.value}</text>
+                            <text className='person-sale'>+${sale.value.toFixed(2)}</text>
                         </div>
                     </div>
                     <div className='divider'></div>
