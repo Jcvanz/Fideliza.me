@@ -7,11 +7,14 @@ import {
     SelectGroup,
     SelectItem,
 } from '../ui/select';
-import { Button } from '../ui/button';
 import { IoTriangle } from "react-icons/io5";
-import { MdAdd } from "react-icons/md";
+import { DialogDemo } from './Dialog';
 
-function SelectAccount() {
+interface SelectAccountProps {
+    btnClassName: string;
+}
+
+function SelectAccount({ btnClassName }: SelectAccountProps) {
     
     const [accountSelected, setAccountSelected] = useState('*Nome logado*');
     const [data, setData] = useState([
@@ -47,14 +50,7 @@ function SelectAccount() {
                             </SelectItem>
                         ))}
                     </SelectGroup>
-                    <div className='flex itens-center justify-center py-3'>
-                        <Button className="w-[180px] justify-center drop-shadow-[2px_2px_2px_rgba(0,0,0,0.25)]">
-                            <MdAdd size={15}/>
-                            <text className='w-[80%] text-start pl-2'>
-                                Cadastrar conta
-                            </text>
-                        </Button>
-                    </div>
+                    <DialogDemo btnClassName={btnClassName}/>
                 </SelectContent>
             </Select>
         </>

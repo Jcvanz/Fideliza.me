@@ -14,7 +14,7 @@ const MenuDashboard: React.FC<MenuBarProps> = ({handleOnFocus}) => {
             <div className='menu-container'>
                 <div className="main-menu">
                     <div className='select-content'>
-                        <SelectAccount/>
+                        <SelectAccount btnClassName='w-[200px] justify-end'/>
                     </div>
                     <DatePicker className='datepicker'/>
                 </div>
